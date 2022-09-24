@@ -1,0 +1,81 @@
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{background:#e35869;font-family:rubik,sans-serif}
+.form-control,#inputEmail3,#inputPassword3,#inputname3{
+    width:10cm;
+
+}
+
+.container{
+
+    width:500px;
+    height:500px;
+    display: grid;
+
+    padding: 100px ;
+    margin: 10px;;
+}
+.content{
+
+
+   color: black;
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction:normal;
+   flex-direction:column;
+   border-radius:4px;
+   box-shadow:0 1px 25px rgba(0,0,0,.2);
+   width:650px;margin:65px auto;
+   padding: 50px 50px 50px 50px;
+   text-align: center;
+   height: 350px;
+
+}
+.content1{
+    color: black;
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction:normal;
+   flex-direction:column;
+   border-radius:4px;
+   box-shadow:0 1px 25px rgba(0,0,0,.2);
+   width:650px;margin:65px auto;
+   padding: 50px 50px 50px 50px;
+   text-align: center;
+   height: 475px;
+
+}
+.button{
+    border-style:inherit;
+    border-radius: 12px;
+  color: rgb(22, 19, 19);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+
+}
+
+  .button1:hover {
+    background-color: #26dc6f; /* Green */
+
+
+  }
+  .button2:hover {
+    background-color: #26dc6f; /* Green */
+
+  }
+.button1 {
+            background-color: #2696bb;
+        float: left;}
+.button2 {background-color: #2696bb;
+          float: right;}
+a{
+    text-align: center;
+    color: black;
+
+}
