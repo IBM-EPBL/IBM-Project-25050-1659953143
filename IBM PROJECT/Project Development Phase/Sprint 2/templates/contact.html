@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>NUTRASSI-contact form</title>
+    
+   
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock %}
+  {% block body %}
+    <!--contact information -->
+    <div class="contain">
+      <span class="big-circle"></span>
+     
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Share your Thoughts with us..!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="fa fa-map-marker icon"></i>
+              <p>NUTRASSI</p>
+            </div>
+            <div class="information">
+              <i class="fa fa-envelope icon"></i>
+              <p>nutrassi@gmail.com</p>
+            </div>
+            <div class="information">
+              <i class="fa fa-phone icon"></i>
+              <p>123-456-789</p>
+            </div>
+          </div>
+          <!-- social media icons -->
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--contact form-->
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="{{url_for('send')}}" autocomplete="off" method="POST">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input">
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input">
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="subject" class="input" >
+              <label for="">Subject</label>
+              <span>Subject</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btnn" >
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+<!--javascript link-->
+    <script src="/static/app.js"></script>
+    {% endblock %}
+

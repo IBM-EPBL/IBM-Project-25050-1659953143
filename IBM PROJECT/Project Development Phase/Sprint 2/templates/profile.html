@@ -1,0 +1,25 @@
+{% extends 'head.html' %}
+
+{% block head %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   <title>NUTRASSI-PROFILE</title>
+  {% endblock %}
+
+  {% block body %}
+  <div class="main_div">
+    <div class="title" style="font-family:cursive;">PROFILE</div>
+    
+   
+         <h4>NAME : <p style="color:blue;">{{name}}</p></h4><br>
+         <h4>EMAIL: <p style="color:blue;">{{email}}</p></h4><br>
+         <h4>USERNAME: <p style="color:blue;">{{username}}</p></h4>
+         <br>
+      <div class="social_icons">
+        <a href="/index"> <span>Home</span></a>
+        <!--<a href="#"><span>Gmail</span></a>-->
+      </div>
+  
+    
+  </div>
+  
+  {% endblock %}

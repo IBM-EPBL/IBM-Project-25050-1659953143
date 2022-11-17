@@ -1,0 +1,50 @@
+{% extends 'head.html' %}
+
+{% block head %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   <title>NUTRASSI</title>
+  {% endblock %}
+
+  {% block body %}
+  <div class="main_div">
+    <div class="title" style="font-family:cursive;">{{success}}</div>  
+      <div class="social_icons">
+        <a href="/index"> <span>Home</span></a>
+        <!--<a href="#"><span>Gmail</span></a>-->
+      </div>
+  
+    
+  </div>
+  
+  {% endblock %}
+
+<!--
+  @app.route('/send',methods=['GET','POST'])
+def send():
+    if request.method == "POST":
+        email = request.form['email']
+        msg = request.form['message']
+        subject = request.form['subject']
+
+        message= Message(subject,sender="infonutrassi@gmail.com",recipients=[email])
+        message.body = msg
+
+        mail.send(message)
+
+        success="Message sent"
+
+        return render_template("result.html",success=success)
+
+
+        # configuration of mail
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'infonutrassi@gmail.com'
+app.config['MAIL_PASSWORD'] = 'Nalaiyathiran1@'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+mail = Mail(app) # instantiate the mail class
+
+from flask_mail import Mail, Message
+-->

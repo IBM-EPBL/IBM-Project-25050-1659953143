@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>NUTRASSI</title>
+
+{% endblock %}
+
+  {% block body %}
+  <!---Health-->
+  <section id="health">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>WELCOME!</h2>
+          <div class="health-content">
+            <i>NUTRASSI</i> is the best place to learn how to fight and stay in shape, all in a relaxed, friendly and supportive atmosphere.
+             To start your journey with us, just sign-in or scroll down to learn more.
+          </div>
+        <p><h2>
+            How Does NUTRASSI Help You?</h2>
+            <br>GET TO KNOW ABOUT THE NUTRITION CONTENT AND CALORIES IN THE FOOD YOU INTAKE<br> 
+            AND TO REDUCE IT'S CONSUMPTION. 
+        </p>
+          <button type="button" class="btnn"><a id="re" href="/">Join Today</a></button>
+          
+          <br>
+        </div>
+        <div class="col-md-6">
+          <div id="slider2">
+            <div id="heslid" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#heslid" data-slide-to="0" class="active"></li>
+                <li data-target="#heslid" data-slide-to="1"></li>
+                <li data-target="#heslid" data-slide-to="2"></li>
+                <li data-target="#heslid" data-slide-to="3"></li>
+                <li data-target="#heslid" data-slide-to="4"></li>
+                <li data-target="#heslid" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/static/assests/healthy-eating-gif.gif">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/static/assests/Drink-More-Water.gif">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/static/assests/meditation.gif">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/static/assests/yoga.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/static/assests/Exercise-GIF.gif">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/static/assests/sleep.jpg">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!--Upload images-->
+    <section id="upload">
+      <div class="container">
+        <h2>UPLOAD IMAGE</h2>
+        <div class="up">
+        <form method="POST" action="">
+          <label for="file-upload" class="custom-file-upload">
+            Upload Food Image
+          </label>
+          <br>
+          <input id="file-upload" type="file" name="food"/><br>
+          <input type="submit" value="Submit" class="btnn" />
+        </form>
+        </div>
+      </div>
+
+    </section>
+    {% endblock %}
