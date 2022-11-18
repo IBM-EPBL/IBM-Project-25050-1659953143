@@ -1,0 +1,46 @@
+{% extends 'head.html' %}
+
+{% block head %}
+<title>NUTRASSI-SIGNUP</title>
+{% endblock %}
+
+
+{% block body %}
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="/postSignUpData" method="post">
+        <strong>{{msg}}</strong>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="sign_up">
+          Already a member? <a href="/">Signin now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  {% endblock %}

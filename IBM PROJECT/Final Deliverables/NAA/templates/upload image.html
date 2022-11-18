@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>NUTRASSI IMAGE UPLOAD </title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+  <script type="text/javascript" src="https://s3.amazonaws.com/static.mlh.io/blog-code/2018-02-clarifai-nutrition-app/wolfram.js"></script>
+  <script type="text/javascript" src="/static/predict.js"></script>
+  <style>
+
+    /* Set display to none for image*/
+    #image {
+        display: none;
+    }
+</style>
+  <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/static.mlh.io/blog-code/2018-02-clarifai-nutrition-app/app.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>What are you eating?</h1>
+    <h2>Snap a photo of your food & upload for a nutritional breakdown.</h2>
+
+    <form action="#">
+      <input type="file" id="filename" placeholder="Filename" size="100"/>
+      <button onclick="predict_click($('#filename').val(), 'file'); return false;">Upload Image</button>
+      <button type="button"
+      onclick="show()" id="btnID">
+      Get my Nutritional Breakdown!
+  </button>
+    </form>
+
+    <div id="predictions">
+      <div class="food-photo">
+        <div class="step"><span>1</span> Upload a Photo</div>
+      </div>
+      <div class="nutrition">
+        <div class="step"><span>2</span> Get a Nutritional Breakdown</div>
+        <img id="image" src="/static/assests/facts.jpeg"
+            />
+        <script>
+          function show() {
+
+              /* Access image by id and change
+              the display property to block*/
+              document.getElementById('image')
+                      .style.display = "block";
+
+              document.getElementById('btnID')
+                      .style.display = "none";
+          }
+      </script>
+        <div id="concepts"></div>
+      </div>
+    </div>
+
+    <div class="powered-by">
+      <button><a href="/index">Back to home</a></button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="shortcut icon" href="/static/assests/logo-removebg-preview.png" type="image/x-icon"/>
+<link rel="icon" href="/static/assests/logo-removebg-preview.png" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="/static/assests/logo-removebg-preview.png" height="100px">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% block head %}
+
+{% endblock %}
+
+</head>
+<body>
+    <!---Navigation-->
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div id="logo">
+        <a><img class="icon" src="/static/assests/logo-removebg-preview.png">
+          <b style="color: green; padding-left:3px;font-size: 45px;">NUTRASSI</b></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">PROFILE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/upload">UPLOAD IMAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">LOG OUT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+      {% block body %}
+
+      {% endblock %}
+
+      <div class="footer">
+        <div class="footer-bottom">
+          &copy; <i>NUTRASSI</i> | Made by <i>Shivaani</i>
+        </div>
+
+      </div>
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "bf2f3980-3801-4ea1-b94b-386c112abbf8", // The ID of this integration.
+          region: "jp-tok", // The region your integration is hosted in.
+          serviceInstanceID: "53d0203b-2b95-4c48-8ba6-5be4e8743fe9", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>
