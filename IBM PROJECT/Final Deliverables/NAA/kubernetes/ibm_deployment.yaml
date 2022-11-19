@@ -12,3 +12,11 @@ spec:
     metadata:
       labels:
         app: nutrition-assistant-application
+    spec:
+      containers:
+        - name: nutrition-assistant-application
+          image: jp.icr.io/nutrassi/repo2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
