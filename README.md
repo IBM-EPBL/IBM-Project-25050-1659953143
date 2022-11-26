@@ -35,8 +35,9 @@ This project aims at building a web App that automatically estimates food attrib
 ![arch](https://user-images.githubusercontent.com/81223614/202902456-d6fd3c90-6924-41b1-9e51-8f63d25b855c.png)
 
 
-# Demo Link
-https://drive.google.com/file/d/1hjoDoWCXrZOW8bCeAFvkLe5H_FNq_onD/view?usp=share_link
+# Demo link
+https://drive.google.com/file/d/1ACrsk2iakxdUgpuNgVRdr2u-mZA1k4EU/view?usp=share_link
+
 
 # NodePort Link:
 http://169.51.195.166:30679/
